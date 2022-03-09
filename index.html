@@ -25,10 +25,63 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"
     integrity="sha384-c+qsMuWimzoMxDpSd67QtX89Nctaxh/CBMTgEnKrTahfMz1HgjjwqrzEGYXMZxYi"
     crossorigin="anonymous"></script>
+<script src="./links.js"></script>
 
 
+<body class="">
+    <div class="container-fluid" style="margin-bottom: 50px">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
+            <div class="container-fluid">
 
-<body>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Offcanvas navbar</a>
+                <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.alaskacommunications.com/Residential/Products/InternetNow" target="_blank">Internet Now</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasNavbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-light btn-dark" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+    </div>
+
+    <div class="container-fluid">
+        ...
+    </div>
     <div class="d-flex align-items-start">
         <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
@@ -52,11 +105,36 @@
         </div>
     </div>
 </body>
+<script>
 
+</script>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Launch static backdrop modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Living in the dorms? Dorms use <a href="https://www.alaskacommunications.com/Residential/Products/InternetNow">Internet Now</a> by Alaska Communications. Click the link below
+          to be directed to the Alaska Communications Internet Now website:
+          <br>
+          <a href="https://www.alaskacommunications.com/Residential/Products/InternetNow" target="_blank">https://www.alaskacommunications.com/Residential/Products/InternetNow</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" target="_blank" href="https://www.alaskacommunications.com/Residential/Products/InternetNow" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </html>
 <!--
     https://www.alaskacommunications.com/Residential/Products/InternetNow
-
-
-
 -->
