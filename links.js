@@ -1,4 +1,4 @@
-let link = "https://eielson.net/"
+let link = "eielson.net"
 if (location.host !== link) {
     //alert("Warning! This site is not authorized to use this script! You will now be redirected to the main host website.")
     //location.replace(link)
