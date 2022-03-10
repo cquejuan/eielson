@@ -1,0 +1,15 @@
+{
+    "nav": [
+        {
+            "type" : "link",
+            "link": "#",
+            "txt" : "home"
+        },
+        {
+            "type" : "dropdown",
+            "link" : "#",
+            "txt" : "Internet",
+            "links" : []
+        }
+    ]
+}
