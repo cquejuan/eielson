@@ -1,5 +1,5 @@
 if (window.fetch) {
-    fetch('https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json')
+    fetch('https://eielson.pacaf.net/test.json')
         .then(response => response.json())
         .then(data => {
             document.body.innerHTML += JSON.stringify(data)
